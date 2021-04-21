@@ -1,0 +1,33 @@
+//before you need to install typescript globaly
+//initialize typescript project
+npm init --yes
+//create a tsconfig.json
+
+//to compile and run typescript project
+npx tsc
+//to run
+npx node dist/index.js
+
+//use webpack to bundle the application
+npx npm install --save-dev webpack@5.17.0
+npx npm install --save-dev webpack-cli@4.5.0
+npx npm install --save-dev ts-loader@8.0.14
+
+//run webpack to create a bundle
+npx webpack
+//run the webpack bundle in node
+npx node dist/bundle.js
+
+//adding a webpack developper server to serve the web page
+npx npm install --save-dev webpack-dev-server@3.11.2
+
+//to start webpack server
+npx webpack serve
+
+//adding bootsrap and css loader
+npx npm install bootstrap@4.6.0
+npx npm install --save-dev css-loader@5.0.1
+npx npm install --save-dev style-loader@2.0.0
+
+//JSX => JavaScript XML
+
