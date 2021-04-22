@@ -2,6 +2,7 @@ import { createElement } from "./tools/jsxFactory";
 import { Product } from "./data/entities";
 import { ProductItem } from "./productItem";
 import { CategoryList } from "./categoryList";
+import { addClass } from "./decorators";
 export class ProductList {
     props: {
         products: Product[],
@@ -10,6 +11,8 @@ export class ProductList {
         addToOrderCallback?: (product: Product, quantity: number) => void,
         filterCallback?: (category: string) => void;
     }
+
+    @addClass("select", "bg-info", "m-1")
     getContent(): HTMLElement {
         return <div className="container-fluid">
             <div className="row">
